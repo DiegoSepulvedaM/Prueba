@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-bg:hover {
+            background-color: #2563eb;
+            color: white;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .transition {
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto p-6 bg-white">
+
+        <!-- Top Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+            <div class="border rounded-lg p-6 shadow-md bg-white hover-zoom">
+                <img src="https://s3-alpha-sig.figma.com/img/e4d7/4bfe/9fb950a99b9f12a810b3ad81c27e492f?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gx5VzsgtvN9W8v~p3vOhvds37xIYPEHnxDWlk6nZCYWVXWCKfdY~20ytjNbbnXL1WcgBEfo47oBraQDzhHX~lIRf6qIdlIhrjjJzQelTj8it77YN6ZSk5B4q7WNLiNzjC4FCqrR44ZPYGF~y9ZTOR~QJTotF2Mkb6Al1g0XTgj5wUBK~kMbs5Z0MnAD~Bgq~EK794rqXdv~aP2z3tjFeKcqpFphPM2yMsuXPSH5mCyB9y1P~kxBxSEFjbhvN6xsB9hgfKuqyWr2GLrAmtPDZpgyCd3FbMFdbDCa3AtXFCk63ImQIlEtwqDSePKoHX3Cn4ssaMeWdrHthRR2FihydZQ__" alt="People bowling on a wooden lane" class="rounded-lg mb-4 w-full h-64 object-cover transition">
+                <h2 class="text-xl font-bold text-blue-600 mb-2">ARRIENDO DE PISTA</h2>
+                <p class="text-gray-600 mb-4">Completo espacio para ejercitar junto a los mejores profesores que te ayudarán a alcanzar tus objetivos.</p>
+                <p class="text-2xl font-bold text-blue-600 mb-4">$18.000</p>
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover-bg">COMPRAR</button>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">Consulta disponibilidad</h2>
+                <img src="https://s3-alpha-sig.figma.com/img/5e9a/47ee/28b124f27470ce4b5556090c7a876e62?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJIE2RX8~TSCgav-l54xMWn7iXmNUedc-v0BoCCxWdw0tDfjfHMSnqxeg4b-z9C6NvNsXWQd7HE-75jqIWaNpwJtRUFb6bKirWxyC39iZx795tcW4fttng9PL4bgDcMx-utkHBEKUXVRzEwCdtsAtA7nms5H4tVsox38kEVxO9ErPb~fK8xNFrxaY7mnD9H3ShxNHgbzNrz7S0Hc5z9CEiyL1IEztFOYqVttSDAAuVbhjmzM5sSM4MWlt9vI~wzM99wv1AZDLb5nlAS7kvPLZRgv5-gW6Sm~0BE0yoDtIoSWaG8zv5z8wrqF1vl8paojFOle99QqENDpMH6TxvK~Cg__" alt="Availability table with various time slots" class="rounded-lg shadow-md transition w-full h-64 object-cover">
+            </div>
+        </div>
+
+        <!-- Important Information -->
+        <div class="mb-10">
+            <h3 class="text-xl font-bold text-blue-600 mb-2">Información Importante</h3>
+            <p class="text-gray-600">
+                - El arriendo de la pista permite hasta 4 asistentes. La reserva de pistas incluye el arriendo de calzado. El horario reservado solo podrá ser modificado con máximo 48 hrs hábiles de anticipación desde tu cuenta en zonasocios. No se realizan reembolsos ni cambios de horarios posteriores a las 48 hrs hábiles mencionadas en el punto anterior.
+            </p>
+        </div>
+
+        <!-- Cafeteria Section -->
+        <div class="flex flex-col lg:flex-row items-center mb-10">
+            <div class="lg:w-2/3 lg:pr-6 mb-4 lg:mb-0">
+                <img src="https://s3-alpha-sig.figma.com/img/80cb/b32c/99982c35246365773650386ac233ecab?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EYwdlc75eAD5W-O0XxecJ7Wk1jKZ3YXynfLSIlPDylrHDtVKLP-GehewVC9dxFrTURkQy0lziDZhaDV0N-Xq8l9c0esTbCfy75ayzHsith6oYwEh-ioELz4pnnqBNnIKsdx8339eO45wgRmfbvrX-Qp6GkJkDlV~95xnBE9pmycTf0EFFKLcRaYCM4zx9UeU~bWzNmKLMgDCsc8APhANtTOEKAyWGeWvKpZCLY~MjS-MuVsFVFYsnAomvoPQglw3CN7IifOdwWz4hzr2eT7VUikA6uQT3x04DkLpx9OMorzIDQ-AETkrVHB4ZmyIQvnGFrm1S2zN01fV1G6GXq02TA__" alt="People enjoying food and drinks at a cafe" class="rounded-lg transition hover-zoom w-full h-64 object-cover">
+            </div>
+            <div class="lg:w-1/3 text-center lg:text-left">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">CAFETERÍA BOWLING</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto lg:mx-0">
+                    En Cafetería Bowling somos tu destino perfecto para disfrutar de un ambiente acogedor y divertido mientras degustas nuestros cafés seleccionados, sándwiches, pasteles, opciones para compartir, cócteles y mucho más. Estamos abiertos para atenderte de lunes a domingo en horario continuado, así que siempre encontrarás un momento ideal para visitarnos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Promotions Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="border rounded-lg p-6 shadow-md bg-white hover-zoom">
+                <img src="https://s3-alpha-sig.figma.com/img/6607/10f3/a37ee12fe495938d2f061641318b765a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S5O91M0Ls8ejrhDpCcoqu2ufOAcvT4qshWNtj2vnS127HzZaEXkYyGz61i7q7vmALWH6~wYHD52GJ0t1sVwP0IfyAW6QxSu2cuc5hp6ttQZYFWMu8qfabRGpdeir5bj6VAK~D1TztgEw0rqteCoAQ06zfZxbxUETQbVR3pZLJgENgHx27~QfgVUf3JacqYvbZPqFVe3m8sPdf8i8EFrHN2mT5MX6K5oUCobygw58cjhG6Gr~c5n9X2vbUxjqpL~6ly7Azh2IzgPHWjheLFyFjEylch9mkON~eJf0zJ6AWjY0IpZP2d7BjuOIO11MsNCtLuJ3dRxNsZg~FuQrKs5ETg__" alt="Promo for bowling with various snacks" class="rounded-lg mb-4 transition w-full h-48 object-cover">
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover-bg">VER CARTA</button>
+                </div>
+                <div class="border rounded-lg p-6 shadow-md bg-white hover-zoom">
+                <img src="https://s3-alpha-sig.figma.com/img/fca9/6f00/5d2ecf2c355df1da6ddc18477d04ab33?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qjzp5CX73kgd6VAUVOzLIL0A7nWjcIFsFyMMa6LX4rbKhpItRiwcf-90DadXvJ7BaKsyy-~EdB0LQmwSnrS746QTtxjurtaSui53cm~Lz-oRb0Zj2swtlZKC~3Nlq2uak1ptnyqPJ3SZj9kGuQi7NPLzL3YlL-8gdk8QS3m45oe16JaI9GAg0f8ijV4ML7Bz3JaPZxy17oQ9Koe8jKeu24953FVPI2RpRKIOmZToC9Vk0LHHkjbO97dhPXrqpjZaO1UsYz4ZYMuVpVSSyEtUs~ltC83TULZpeHtWVMx6W6giEpgG7hwx8iLd2XYrUvwYZybcC630lhcWHy3bsmoAVw__" alt="Promo for bowling with special deal for kids" class="rounded-lg mb-4 transition w-full h-48 object-cover">
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover-bg">CELEBRA TU CUMPLEAÑOS</button>
+                </div>
+                <div class="border rounded-lg p-6 shadow-md bg-white hover-zoom">
+                <img src="https://s3-alpha-sig.figma.com/img/2ac5/fe1a/89841672a1fb758d606541d4f8d5dffc?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O1TDMDSQoKpiZi0XJau1vj4yQ8w1DdGRz5Q8DbgYv1epK0vn9S6AeWYOsicik6Xzpt~u7RgTcp8yStpRsWpCPeE-VV1KtCtC1dckHTh3I4K5Nj9J~3dMxkc8ruyboUl5mzxa5sp1TmLQnEfBgWmImKmntZImbShAgA3buQXiiU4HCaC0moDbCeZ73QW7rtUb~ZplSHjwDx8jF~Mjjf8ltkvkF-1fGrRYyjp1wMmxhyKu-~edgdGHuWTINLUeXGT18XRILVkFoX4ymMM-m5Ni8vEtY4ReyU2VH9zvcuNyyhtv4Gc3nb2~1IwhQEDFoKhkkFATChTi91ufaWGAIPXX7g__" alt="Promo for bowling with bagel and cream cheese" class="rounded-lg mb-4 transition w-full h-48 object-cover">
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover-bg">CONTACTO</button>
+                </div>
+                </div>
+            </div>
+        </body>
+        </html>
